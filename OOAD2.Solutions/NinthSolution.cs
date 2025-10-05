@@ -9,7 +9,7 @@ public class NinthSolution
 
 
  // Базовый класс General
-    public class General : object, ICloneable
+    public partial class General : object, ICloneable
     {
         // 1. Глубокое Копирование содержимого 
         public virtual void CopyFrom(General other)
@@ -83,7 +83,7 @@ public class NinthSolution
     }
 
     // Производный класс Any
-    public class Any : General
+    public partial class Any : General
     {
         public string Name { get; set; }
         public int Value { get; set; }
